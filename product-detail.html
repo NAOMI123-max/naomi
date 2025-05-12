@@ -3,191 +3,536 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Nocturne Studios</title>
-    <!-- Same head content as movies.html -->
+    <title>Quantum X Pro | NexusCart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="film-reel">
-            <div class="film-hole"></div>
-            <div class="film-hole"></div>
-            <div class="film-hole"></div>
-        </div>
-    </div>
-
-    <!-- Header -->
+    <!-- Header (Same as index.html) -->
     <header class="main-header">
-        <!-- Same header as movies.html with "Contact" active -->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="nexus">Nexus</span><span class="cart">Cart</span>
+                    <i class="fas fa-bolt"></i>
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="user-actions">
+                <a href="#" class="user-icon"><i class="far fa-user"></i></a>
+                <a href="#" class="wishlist-icon"><i class="far fa-heart"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <!-- Contact Banner -->
-    <section class="page-banner" style="background-image: url('images/backgrounds/contact-banner.jpg')">
+    <!-- Main Content -->
+    <main class="product-detail-page">
         <div class="container">
-            <h1>Get In Touch</h1>
-            <p>We'd love to hear from you</p>
-        </div>
-    </section>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / 
+                <a href="products.html">Products</a> / 
+                <span>Quantum X Pro</span>
+            </div>
 
-    <!-- Contact Content -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2 class="section-title">Contact Information</h2>
-                    <p>Have questions, feedback, or business inquiries? Reach out to us using the information below or fill out the contact form.</p>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+            <div class="product-detail-container">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Quantum X Pro" id="mainImage">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Quantum X Pro Front">
+                        <img src="https://images.unsplash.com/photo-1601784551406-bf0a916a7610?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Quantum X Pro Back">
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Quantum X Pro Side">
+                        <img src="https://images.unsplash.com/photo-1601784551406-bf0a916a7610?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Quantum X Pro Angle">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Quantum X Pro</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="review-count">124 Reviews</span>
+                            <span class="review-link"><a href="#reviews">Write a review</a></span>
                         </div>
-                        <div class="info-content">
-                            <h3>Address</h3>
-                            <p>123 Cinema Street<br>Hollywood, CA 90210<br>United States</p>
+                        <div class="product-sku">SKU: QXP-2023-BLK</div>
+                        <div class="availability">In Stock</div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">$899.99</span>
+                        <span class="original-price">$999.99</span>
+                        <span class="discount">10% OFF</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>The Quantum X Pro is our flagship smartphone featuring a revolutionary 6.7" AMOLED display, Snapdragon 888 processor, and a professional-grade quad camera system. Experience lightning-fast performance and stunning visuals with this powerhouse device.</p>
+                        <ul>
+                            <li>6.7" 120Hz AMOLED Display</li>
+                            <li>Snapdragon 888 Processor</li>
+                            <li>12GB RAM + 256GB Storage</li>
+                            <li>Quad Camera System (108MP Main)</li>
+                            <li>5000mAh Battery with 65W Fast Charging</li>
+                            <li>5G Connectivity</li>
+                            <li>IP68 Water and Dust Resistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option">
+                            <label for="color">Color:</label>
+                            <select id="color">
+                                <option value="black">Cosmic Black</option>
+                                <option value="blue">Stellar Blue</option>
+                                <option value="silver">Lunar Silver</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label for="storage">Storage:</label>
+                            <select id="storage">
+                                <option value="256">256GB</option>
+                                <option value="512">512GB</option>
+                            </select>
+                        </div>
+                        <div class="option">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
+
+                    <div class="product-actions">
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                        <button class="btn buy-now-btn">Buy Now</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i> Add to Wishlist</button>
                     </div>
-                    
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
+
+                    <div class="product-meta-footer">
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2-Year Warranty</span>
                         </div>
-                        <div class="info-content">
-                            <h3>Email</h3>
-                            <p>info@nocturnestudios.com</p>
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
                         </div>
-                    </div>
-                    
-                    <div class="contact-social">
-                        <h3>Follow Us</h3>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <h2 class="section-title">Send Us a Message</h2>
-                    <form id="feedbackForm" novalidate>
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                            <div class="error-message" id="name-error"></div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <ul class="tabs-nav">
+                    <li class="active" data-tab="description">Description</li>
+                    <li data-tab="specs">Specifications</li>
+                    <li data-tab="reviews">Reviews</li>
+                    <li data-tab="shipping">Shipping & Returns</li>
+                </ul>
+
+                <div class="tabs-content">
+                    <!-- Description Tab -->
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>The Quantum X Pro redefines smartphone excellence with its cutting-edge technology and premium design. The 6.7" AMOLED display with 120Hz refresh rate delivers buttery-smooth visuals, while the Snapdragon 888 processor ensures lightning-fast performance for gaming and multitasking.</p>
+                        <p>Capture stunning photos with the professional-grade quad camera system featuring a 108MP main sensor, 12MP ultra-wide lens, 8MP telephoto lens with 3x optical zoom, and a dedicated macro camera. The 5000mAh battery with 65W fast charging keeps you powered all day.</p>
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Quantum X Pro Features">
+                    </div>
+
+                    <!-- Specifications Tab -->
+                    <div class="tab-pane" id="specs">
+                        <h3>Technical Specifications</h3>
+                        <table>
+                            <tr>
+                                <th>Display</th>
+                                <td>6.7" AMOLED, 120Hz, HDR10+</td>
+                            </tr>
+                            <tr>
+                                <th>Processor</th>
+                                <td>Qualcomm Snapdragon 888</td>
+                            </tr>
+                            <tr>
+                                <th>RAM</th>
+                                <td>12GB LPDDR5</td>
+                            </tr>
+                            <tr>
+                                <th>Storage</th>
+                                <td>256GB/512GB UFS 3.1</td>
+                            </tr>
+                            <tr>
+                                <th>Rear Cameras</th>
+                                <td>108MP main + 12MP ultra-wide + 8MP telephoto + 5MP macro</td>
+                            </tr>
+                            <tr>
+                                <th>Front Camera</th>
+                                <td>32MP</td>
+                            </tr>
+                            <tr>
+                                <th>Battery</th>
+                                <td>5000mAh with 65W fast charging</td>
+                            </tr>
+                            <tr>
+                                <th>OS</th>
+                                <td>Android 13 with Quantum UI</td>
+                            </tr>
+                            <tr>
+                                <th>Connectivity</th>
+                                <td>5G, Wi-Fi 6, Bluetooth 5.2, NFC</td>
+                            </tr>
+                            <tr>
+                                <th>Dimensions</th>
+                                <td>164.3 x 76.6 x 8.9 mm</td>
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <td>205g</td>
+                            </tr>
+                            <tr>
+                                <th>Colors</th>
+                                <td>Cosmic Black, Stellar Blue, Lunar Silver</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Reviews Tab -->
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <div class="rating-value">4.7</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="total-reviews">Based on 124 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span class="stars">5 <i class="fas fa-star"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 75%;"></div>
+                                    </div>
+                                    <span class="percentage">75%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="stars">4 <i class="fas fa-star"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 15%;"></div>
+                                    </div>
+                                    <span class="percentage">15%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="stars">3 <i class="fas fa-star"></i></span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 7%;"></div>
+                                    </div>
+                                    <span class="percentage">7%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span class="stars">2 <i class="fas fa-star"></i></span
+                                                                    <div class="bar-container">
+                                    <div class="bar" style="width: 2%;"></div>
+                                </div>
+                                <span class="percentage">2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="stars">1 <i class="fas fa-star"></i></span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 1%;"></div>
+                                </div>
+                                <span class="percentage">1%</span>
+                            </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                            <div class="error-message" id="email-error"></div>
+                    </div>
+
+                    <div class="review-form">
+                        <h4>Write a Review</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="review-rating">Your Rating</label>
+                                <div class="rating-input">
+                                    <input type="radio" name="rating" id="star5" value="5"><label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star4" value="4"><label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star3" value="3"><label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star2" value="2"><label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star1" value="1"><label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-name">Name</label>
+                                <input type="text" id="review-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-email">Email</label>
+                                <input type="email" id="review-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title">Review Title</label>
+                                <input type="text" id="review-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Your Review</label>
+                                <textarea id="review-text" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Review</button>
+                        </form>
+                    </div>
+
+                    <div class="customer-reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Alex Johnson</div>
+                                <div class="review-date">October 15, 2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <h5 class="review-title">Best phone I've ever owned!</h5>
+                            <p class="review-text">The Quantum X Pro exceeded all my expectations. The display is stunning, the performance is blazing fast, and the battery life is incredible. The camera takes professional-quality photos. Worth every penny!</p>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject">
+
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-author">Sarah Miller</div>
+                                <div class="review-date">October 10, 2023</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <h5 class="review-title">Excellent device with minor quirks</h5>
+                            <p class="review-text">Love almost everything about this phone. The display and performance are top-notch. My only complaint is that it's a bit heavy compared to other flagships. The camera system is phenomenal though.</p>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message *</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                            <div class="error-message" id="message-error"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
+                    </div>
+                </div>
+
+                <!-- Shipping Tab -->
+                <div class="tab-pane" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <p>We offer free standard shipping on all orders over $50. Standard shipping typically takes 3-5 business days. Expedited shipping options are available at checkout.</p>
                     
-                    <div id="form-success" class="form-success">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Thank You!</h3>
-                        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+                    <h4>Return Policy</h4>
+                    <p>We offer a 30-day return policy for unused and unopened products. To initiate a return, please contact our customer service team with your order number.</p>
+                    
+                    <h4>Warranty</h4>
+                    <p>All products come with a 2-year manufacturer's warranty covering defects in materials and workmanship.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nebula Ultra">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Nebula Ultra</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(87)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Aether Pro">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Aether Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(143)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$599.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-thumb">
+                        <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nova X">
+                        <div class="product-actions">
+                            <button class="quick-view"><i class="fas fa-eye"></i></button>
+                            <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Nova X</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(312)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$349.99</span>
+                            <span class="original-price">$399.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</main>
 
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="container">
-            <h2 class="section-title">Our Location</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.455676485828!2d-118.32584168478406!3d34.0839809805975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8b3b3b3b3b3%3A0x3b3b3b3b3b3b3b3b!2sHollywood!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!-- Footer (Same as index.html) -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col about-col">
+                <div class="footer-logo">
+                    <span class="nexus">Nexus</span><span class="cart">Cart</span>
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <p>Your premier destination for cutting-edge technology and electronics. We bring you the latest gadgets at competitive prices.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col customer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@nexuscart.com</li>
+                </ul>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
             </div>
         </div>
-    </section>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 NexusCart. All Rights Reserved.
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <!-- Footer (same as index.html) -->
+<!-- Back to Top Button -->
+<button class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
-    <script>
-        // Form Validation
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('feedbackForm');
-            const successMessage = document.getElementById('form-success');
-            
-            // Hide success message initially
-            successMessage.style.display = 'none';
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Reset errors
-                document.querySelectorAll('.error-message').forEach(el => {
-                    el.textContent = '';
-                });
-                
-                // Validate form
-                let isValid = true;
-                
-                // Name validation
-                const name = document.getElementById('name');
-                if (!name.value.trim()) {
-                    document.getElementById('name-error').textContent = 'Please enter your name';
-                    isValid = false;
-                }
-                
-                // Email validation
-                const email = document.getElementById('email');
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!email.value.trim()) {
-                    document.getElementById('email-error').textContent = 'Please enter your email';
-                    isValid = false;
-                } else if (!emailRegex.test(email.value)) {
-                    document.getElementById('email-error').textContent = 'Please enter a valid email';
-                    isValid = false;
-                }
-                
-                // Message validation
-                const message = document.getElementById('message');
-                if (!message.value.trim()) {
-                    document.getElementById('message-error').textContent = 'Please enter your message';
-                    isValid = false;
-                }
-                
-                if (isValid) {
-                    // Simulate form submission
-                    form.style.display = 'none';
-                    successMessage.style.display = 'block';
-                    
-                    // In a real implementation, you would send the form data to a server here
-                    // For example using fetch() or XMLHttpRequest
-                }
-            });
-            
-            // Shared JavaScript from index.html
-        });
-    </script>
-</body>
-</html>
+<script src="js/main.js"></script>
+    </body> </html> ```
+                                                                                         
